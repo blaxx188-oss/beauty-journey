@@ -193,7 +193,7 @@ export const ADMIN_MOCK_AUDIT_LOGS = [
   { id: "log-2", adminId: "admin-1", adminName: "Super Admin", action: "تغيير حالة طلب", targetType: "Order", targetId: "ORD-1002", details: "تغيير الحالة إلى 'جاري التجهيز'", ipAddress: "192.168.1.1", createdAt: "2024-03-14T11:00:00Z" },
 ];
 
-export const ADMIN_MOCK_REVENUE_DATA = [
+export const _ADMIN_MOCK_REVENUE_DATA = [
   { date: "2024-03-01", revenue: 5000, orders: 12 },
   { date: "2024-03-02", revenue: 7500, orders: 18 },
   { date: "2024-03-03", revenue: 4200, orders: 10 },

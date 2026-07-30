@@ -8,7 +8,8 @@
 import { create } from "zustand";
 import type {
   CheckoutStep,
-  CheckoutState,
+
+
   ShippingAddress,
   ShippingMethod,
   PaymentMethodType,
@@ -16,7 +17,8 @@ import type {
   PaymentInfo,
   GuestInfo,
   AppliedCoupon,
-  OrderTotals,
+
+
   OrderCheckoutStatus,
 } from "@/types";
 import { calculateCheckoutTotals } from "@/services/checkout";

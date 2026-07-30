@@ -49,6 +49,7 @@ const inter = Inter({
 // ============================================
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://beauty-journey.com"),
   title: {
     default: "Beauty Journey | رحلتك الجمالية",
     template: "%s | Beauty Journey",
@@ -79,12 +80,27 @@ export const metadata: Metadata = {
     title: "Beauty Journey | رحلتك الجمالية",
     description:
       "وجهتك الفاخرة للعناية بالبشرة والشعر في مصر. اكتشفي روتينك المثالي.",
+    images: [
+      {
+        url: "/images/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Beauty Journey - رحلتك الجمالية",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Beauty Journey | رحلتك الجمالية",
     description:
       "وجهتك الفاخرة للعناية بالبشرة والشعر في مصر.",
+    images: ["/images/og-image.jpg"],
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: ["/favicon.svg"],
   },
 };
 
@@ -103,11 +119,6 @@ export default function RootLayout({
       dir="rtl"
       className={`${amiri.variable} ${tajawal.variable} ${playfairDisplay.variable} ${inter.variable}`}
     >
-      <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-      </head>
       <body className="min-h-screen flex flex-col antialiased">
         <Providers>
           {children}

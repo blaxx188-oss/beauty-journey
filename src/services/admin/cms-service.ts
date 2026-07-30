@@ -12,7 +12,7 @@ export const cmsService = {
   getPages: async () => ADMIN_MOCK_PAGES,
   
   updateHomepageSection: async (sectionId: string, data: any) => {
-    console.log("Updating homepage section:", sectionId, data);
+    // console.log("Updating homepage section:", sectionId, data);
     return { success: true };
   },
 };

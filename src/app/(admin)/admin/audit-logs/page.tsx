@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Shield, Search, Filter, History } from "lucide-react";
+import { Search, Filter, History } from "lucide-react";
 import { AdminPageHeader } from "@/components/admin/shared/AdminPageHeader";
 import { AdminDataTable } from "@/components/admin/shared/AdminDataTable";
 import { ADMIN_MOCK_AUDIT_LOGS } from "@/data/admin-mock-data";

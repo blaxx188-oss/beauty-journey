@@ -5,7 +5,6 @@
  * Shows skeleton screens and processing animations.
  */
 
-import React from "react";
 import { motion } from "framer-motion";
 import { Loader2, CreditCard, Shield } from "lucide-react";
 

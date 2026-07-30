@@ -11,7 +11,6 @@ import type {
   ShippingMethod,
   AppliedCoupon,
 } from "@/types";
-import { supabaseClient } from "@/lib/supabase";
 
 // ============================================
 // TYPES
@@ -96,7 +95,7 @@ export async function createCheckoutOrder(
 ): Promise<OrderCreationResult> {
   const orderNumber = generateOrderNumber();
 
-  const orderData = {
+  const _orderData = {
     orderNumber,
     items: input.items.map((item) => ({
       productId: item.productId,
@@ -139,7 +138,7 @@ export async function createCheckoutOrder(
   // Architecture: In production, this calls the Supabase Edge Function
   // const { data, error } = await supabaseClient.functions.invoke(
   //   "create-checkout-order",
-  //   { body: orderData }
+  //   { body: _orderData }
   // );
   //
   // if (error) throw new Error(error.message || "Failed to create order");

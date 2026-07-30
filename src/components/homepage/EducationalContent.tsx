@@ -79,7 +79,8 @@ export default function EducationalContent() {
                   <div className="group cursor-pointer h-full">
                     {/* Article Image */}
                     <div className="relative h-48 md:h-56 rounded-lg overflow-hidden mb-4 bg-gray-200">
-                      <img
+                                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
                         src={article.imageUrl}
                         alt={article.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"

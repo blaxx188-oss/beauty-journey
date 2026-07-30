@@ -9,15 +9,15 @@ export const productAdminService = {
     return ADMIN_MOCK_PRODUCTS.find((p) => p.id === id);
   },
   createProduct: async (data: any) => {
-    console.log("Creating product:", data);
+    // console.log("Creating product:", data);
     return { success: true };
   },
   updateProduct: async (id: string, data: any) => {
-    console.log("Updating product:", id, data);
+    // console.log("Updating product:", id, data);
     return { success: true };
   },
   deleteProduct: async (id: string) => {
-    console.log("Deleting product:", id);
+    // console.log("Deleting product:", id);
     return { success: true };
   },
 };

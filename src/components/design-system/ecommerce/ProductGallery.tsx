@@ -57,7 +57,8 @@ function ProductGallery({ images, className }: ProductGalleryProps) {
               )}
               aria-label={`صورة ${index + 1}`}
             >
-              <img
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+  <img
                 src={image.src}
                 alt={image.alt}
                 className="w-full h-full object-cover"

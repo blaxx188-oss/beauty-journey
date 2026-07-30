@@ -19,8 +19,7 @@ import {
   Menu,
   X,
   Sparkles,
-  Layout,
-  Mail
+  Layout
 } from "lucide-react";
 import { cn } from "@/utils/cn";
 import { useAuth } from "@/lib/auth-context";
@@ -75,7 +74,7 @@ const sidebarItems: SidebarItem[] = [
   {
     title: "المشتركين",
     href: "/admin/newsletter",
-    icon: <Mail className="w-5 h-5" />,
+    icon: <Tag className="w-5 h-5" />,
   },
   {
     title: "سجل العمليات",

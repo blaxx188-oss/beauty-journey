@@ -10,26 +10,32 @@ interface SeoConfig {
   path?: string;
   image?: string;
   locale?: "ar" | "en";
-  type?: "website" | "article" | "product";
+  type?: "website" | "article" | "book" | "profile";
   keywords?: string[];
   noIndex?: boolean;
 }
 
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL || "https://beauty-journey.com";
 
+const VALID_OG_TYPES = ["website", "article", "book", "profile", "video.movie", "video.episode"] as const;
+type ValidOGType = (typeof VALID_OG_TYPES)[number];
+
 export function generatePageMetadata(config: SeoConfig): Metadata {
-  const { 
-    title, 
-    description, 
-    path = "", 
-    image = "/images/og-image.jpg", 
+  const {
+    title,
+    description,
+    path = "",
+    image = "/images/og-image.jpg",
     locale = "ar",
     type = "website",
     keywords = [],
-    noIndex = false
+    noIndex = false,
   } = config;
 
   const fullUrl = `${APP_URL}${path}`;
+  const ogType = VALID_OG_TYPES.includes(type as ValidOGType)
+    ? (type as ValidOGType)
+    : "website";
 
   return {
     title,
@@ -42,7 +48,7 @@ export function generatePageMetadata(config: SeoConfig): Metadata {
       "مستحضرات تجميل",
       "عناية بالبشرة",
       "عناية بالشعر",
-      ...keywords
+      ...keywords,
     ],
     alternates: {
       canonical: fullUrl,
@@ -56,7 +62,7 @@ export function generatePageMetadata(config: SeoConfig): Metadata {
       description,
       url: fullUrl,
       locale: locale === "ar" ? "ar_EG" : "en_US",
-      type: type as any,
+      type: ogType,
       siteName: "Beauty Journey",
       images: [
         {
@@ -109,7 +115,9 @@ export function generateProductSchema(product: {
     "@type": "Product",
     name: product.name,
     description: product.description,
-    image: product.image.startsWith("http") ? product.image : `${APP_URL}${product.image}`,
+    image: product.image.startsWith("http")
+      ? product.image
+      : `${APP_URL}${product.image}`,
     sku: product.sku,
     brand: {
       "@type": "Brand",
@@ -129,11 +137,13 @@ export function generateProductSchema(product: {
         name: "Beauty Journey",
       },
     },
-    aggregateRating: product.ratingValue ? {
-      "@type": "AggregateRating",
-      ratingValue: product.ratingValue,
-      reviewCount: product.reviewCount || 0,
-    } : undefined,
+    aggregateRating: product.ratingValue
+      ? {
+          "@type": "AggregateRating",
+          ratingValue: product.ratingValue,
+          reviewCount: product.reviewCount || 0,
+        }
+      : undefined,
   };
 }
 
@@ -184,17 +194,17 @@ export function generateWebsiteSchema() {
     name: "Beauty Journey",
     description: "وجهتك الفاخرة للعناية بالبشرة والشعر في مصر",
     publisher: {
-      "@id": `${APP_URL}/#organization`
+      "@id": `${APP_URL}/#organization`,
     },
     potentialAction: {
       "@type": "SearchAction",
       target: {
         "@type": "EntryPoint",
-        urlTemplate: `${APP_URL}/search?q={search_term_string}`
+        urlTemplate: `${APP_URL}/search?q={search_term_string}`,
       },
-      "query-input": "required name=search_term_string"
+      "query-input": "required name=search_term_string",
     },
-    inLanguage: "ar-EG"
+    inLanguage: "ar-EG",
   };
 }
 
@@ -209,7 +219,9 @@ export function generateBreadcrumbSchema(items: { name: string; item: string }[]
       "@type": "ListItem",
       position: index + 1,
       name: item.name,
-      item: item.item.startsWith("http") ? item.item : `${APP_URL}${item.item}`,
+      item: item.item.startsWith("http")
+        ? item.item
+        : `${APP_URL}${item.item}`,
     })),
   };
 }

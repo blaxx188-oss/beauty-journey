@@ -71,9 +71,9 @@ export default function PersonalizedRecommendations() {
               <motion.div key={product.id} variants={itemVariants}>
                 <ProductCard
                   {...product}
-                  onAddToCart={() => console.log("Add to cart:", product.id)}
+                  onAddToCart={() => {}}
                   onWishlistToggle={() =>
-                    console.log("Toggle wishlist:", product.id)
+                    {}
                   }
                 />
               </motion.div>

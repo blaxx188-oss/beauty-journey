@@ -6,7 +6,6 @@ import { AdminPageHeader } from "@/components/admin/shared/AdminPageHeader";
 import { AdminDataTable } from "@/components/admin/shared/AdminDataTable";
 import { ADMIN_MOCK_PAGES } from "@/data/admin-mock-data";
 import { Button } from "@/components/design-system/core/Button";
-import { Tabs } from "@/components/design-system/core/Tabs";
 
 export default function AdminCMSPage() {
   const columns = [

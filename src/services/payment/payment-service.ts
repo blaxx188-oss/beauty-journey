@@ -10,8 +10,7 @@ import type { PaymentMethodType } from "@/types";
 // TYPES
 // ============================================
 
-export type { PaymentInitiationRequest, PaymentInitiationResponse } from "../payment-service";
-export type { PaymentMethod } from "../payment-service";
+// Types are now defined locally or imported from @/types
 
 export interface PaymobTokenResponse {
   token: string;
@@ -295,9 +294,9 @@ export async function processCOD(params: {
  * Verify webhook signature from Paymob.
  */
 export function verifyWebhookSignature(
-  payload: string,
-  hmacSecret: string,
-  signature: string
+  _payload: string,
+  _hmacSecret: string,
+  _signature: string
 ): boolean {
   // Architecture: In production
   // const crypto = require("crypto");

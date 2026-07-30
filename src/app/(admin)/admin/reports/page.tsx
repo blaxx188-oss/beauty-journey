@@ -13,7 +13,6 @@ import {
 } from "lucide-react";
 import { AdminPageHeader } from "@/components/admin/shared/AdminPageHeader";
 import { Button } from "@/components/design-system/core/Button";
-import { ADMIN_MOCK_REVENUE_DATA } from "@/data/admin-mock-data";
 import { motion } from "framer-motion";
 
 export default function AdminReportsPage() {

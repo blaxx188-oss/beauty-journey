@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B6F47"/>
+      <stop offset="50%" style="stop-color:#C9A96E"/>
+      <stop offset="100%" style="stop-color:#8B6F47"/>
+    </linearGradient>
+  </defs>
+  <text x="200" y="65" text-anchor="middle" font-family="serif" font-size="42" fill="url(#logoGrad)" font-weight="bold">Beauty Journey</text>
+  <text x="200" y="85" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#C9A96E" letter-spacing="4">رحلتك الجمالية</text>
+</svg>

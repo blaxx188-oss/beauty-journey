@@ -42,12 +42,8 @@ export async function POST(request: NextRequest) {
     //   return NextResponse.json({ error: "Failed to update order" }, { status: 500 });
     // }
 
-    console.log("[Paymob Webhook]", {
-      paymentId,
-      merchantOrderId,
-      success,
-      amount: amountCents / 100,
-    });
+     
+    // console.log("[Paymob Webhook]", { paymentId, merchantOrderId, success, amount: amountCents / 100 });
 
     // Return success to Paymob
     return NextResponse.json({ received: true });

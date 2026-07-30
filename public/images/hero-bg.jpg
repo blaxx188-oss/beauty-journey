@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 800">
+  <defs>
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5ebe0"/>
+      <stop offset="40%" style="stop-color:#d5bdaf"/>
+      <stop offset="100%" style="stop-color:#eddcd2"/>
+    </linearGradient>
+    <radialGradient id="heroGlow" cx="70%" cy="40%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="800" fill="url(#heroBg)"/>
+  <rect width="1920" height="800" fill="url(#heroGlow)"/>
+  <circle cx="1300" cy="350" r="200" fill="#C9A96E" opacity="0.08"/>
+  <circle cx="1350" cy="300" r="150" fill="#C9A96E" opacity="0.06"/>
+  <circle cx="400" cy="500" r="180" fill="#8B6F47" opacity="0.05"/>
+  <text x="960" y="380" text-anchor="middle" font-family="serif" font-size="72" fill="#3d2b1f" font-weight="bold">Beauty Journey</text>
+  <text x="960" y="440" text-anchor="middle" font-family="sans-serif" font-size="32" fill="#6b5344" opacity="0.8">رحلتك الجمالية تبدأ من هنا</text>
+</svg>

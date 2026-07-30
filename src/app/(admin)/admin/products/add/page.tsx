@@ -67,7 +67,7 @@ export default function AddProductPage() {
   const onSubmit = async (data: ProductFormValues) => {
     setIsSubmitting(true);
     await new Promise((resolve) => setTimeout(resolve, 2000));
-    console.log("Product Data:", data);
+    // console.log("Product Data:", data);
     setIsSubmitting(false);
     router.push("/admin/products");
   };

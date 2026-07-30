@@ -71,6 +71,7 @@ export default function WishlistPage() {
               className="group bg-white dark:bg-neutral-primary rounded-2xl border border-border shadow-sm overflow-hidden hover:shadow-md transition-all"
             >
               <div className="relative aspect-square bg-neutral-secondary/30 overflow-hidden">
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img 
                   src={item.image} 
                   alt={item.name} 

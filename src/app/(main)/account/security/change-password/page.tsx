@@ -42,7 +42,7 @@ export default function ChangePasswordPage() {
     setIsSubmitting(true);
     // Simulate API call
     await new Promise((resolve) => setTimeout(resolve, 1500));
-    console.log("Password Changed");
+    // console.log("Password Changed");
     setIsSubmitting(false);
     alert("تم تغيير كلمة المرور بنجاح!");
     router.push("/account/security");

@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Bell, Search, Menu } from "lucide-react";
+import { Bell, Menu, Search } from "lucide-react";
 import { Button } from "@/components/design-system/core/Button";
 import { Input } from "@/components/design-system/core/Input";
 

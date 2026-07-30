@@ -9,11 +9,11 @@ export const customerAdminService = {
     return (ADMIN_MOCK_CUSTOMERS.find((c) => c.id === id) as unknown as AdminCustomer) || null;
   },
   updateCustomerStatus: async (id: string, status: "active" | "blocked") => {
-    console.log(`Updating customer ${id} status to ${status}`);
+    // console.log(`Updating customer ${id} status to ${status}`);
     return { success: true };
   },
   addCustomerNote: async (id: string, note: string) => {
-    console.log(`Adding note to customer ${id}: ${note}`);
+    // console.log(`Adding note to customer ${id}: ${note}`);
     return { success: true };
   }
 };

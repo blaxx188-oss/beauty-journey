@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="quizBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8ddd3"/>
+      <stop offset="100%" style="stop-color:#c9b8a8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#quizBg)"/>
+  <circle cx="600" cy="280" r="100" fill="white" opacity="0.2"/>
+  <text x="600" y="290" text-anchor="middle" font-family="serif" font-size="48" fill="#3d2b1f">?</text>
+  <text x="600" y="420" text-anchor="middle" font-family="sans-serif" font-size="28" fill="#5c4a3a" font-weight="500">اكتشفي روتينك المثالي</text>
+  <text x="600" y="460" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#8b7565" opacity="0.7">Beauty Quiz</text>
+</svg>

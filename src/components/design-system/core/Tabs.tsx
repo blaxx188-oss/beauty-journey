@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * Tabs — Tabbed content area with animated indicator.
+ * — Tabbed content area with animated indicator.
  */
 
 import React, { useState } from "react";

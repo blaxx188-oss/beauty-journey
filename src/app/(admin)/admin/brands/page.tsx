@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Plus, Edit2, Trash2, Award } from "lucide-react";
+import { Plus, Edit2, Trash2 } from "lucide-react";
 import { AdminPageHeader } from "@/components/admin/shared/AdminPageHeader";
 import { AdminDataTable } from "@/components/admin/shared/AdminDataTable";
 import { ADMIN_MOCK_BRANDS } from "@/data/admin-mock-data";
@@ -34,7 +34,7 @@ export default function AdminBrandsPage() {
         action={{
           label: "إضافة علامة تجارية",
           icon: <Plus className="w-4 h-4" />,
-          onClick: () => console.log("Add Brand")
+          onClick: () => { /* Add Brand */ }
         }}
       />
 

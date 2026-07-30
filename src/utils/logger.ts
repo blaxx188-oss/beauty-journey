@@ -53,6 +53,7 @@ class Logger {
 
     const consoleMethod = entry.level === "debug" ? "log" : entry.level;
     
+    /* eslint-disable no-console */
     console[consoleMethod](
       `%c[${entry.level.toUpperCase()}] %c[${entry.context}] %c${entry.message}`,
       styles[entry.level],

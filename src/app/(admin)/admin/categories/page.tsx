@@ -46,7 +46,7 @@ export default function AdminCategoriesPage() {
         action={{
           label: "إضافة قسم جديد",
           icon: <Plus className="w-4 h-4" />,
-          onClick: () => console.log("Add Category")
+          onClick: () => { /* Add Category */ }
         }}
       />
 

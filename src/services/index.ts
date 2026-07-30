@@ -2,7 +2,6 @@ export * from "./product-service";
 export * from "./auth-service";
 export * from "./cart-service";
 export * from "./order-service";
-export { initiatePayment, processCOD as processCODOriginal, verifyPaymentStatus } from "./payment-service";
 export * from "./checkout";
 export * from "./address";
 export * from "./shipping";

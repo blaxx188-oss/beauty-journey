@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description: `اكتشفي ${product.title} من ${product.brand}. منتج عالي الجودة للعناية بجمالك.`,
     path: `/products/${product.slug}`,
     image: product.imageUrl,
-    type: "product",
+    type: "website",
   });
 }
 

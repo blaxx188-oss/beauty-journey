@@ -47,7 +47,7 @@ export default function AdminCouponsPage() {
         action={{
           label: "إنشاء كوبون جديد",
           icon: <Plus className="w-4 h-4" />,
-          onClick: () => console.log("Add Coupon")
+          onClick: () => { /* Add Coupon */ }
         }}
       />
 

@@ -2,7 +2,7 @@ import {
   ADMIN_MOCK_MESSAGES, 
   ADMIN_MOCK_SUBSCRIBERS, 
   ADMIN_MOCK_AUDIT_LOGS, 
-  ADMIN_MOCK_REVENUE_DATA 
+  _ADMIN_MOCK_REVENUE_DATA as ADMIN_MOCK_REVENUE_DATA
 } from "@/data/admin-mock-data";
 
 export const storeAdminService = {
@@ -30,7 +30,7 @@ export const storeAdminService = {
     };
   },
   updateStoreSettings: async (settings: any) => {
-    console.log("Updating store settings:", settings);
+    // console.log("Updating store settings:", settings);
     return { success: true };
   }
 };

@@ -45,7 +45,7 @@ export default function AddAddressPage() {
     setIsSubmitting(true);
     // Simulate API call
     await new Promise((resolve) => setTimeout(resolve, 1500));
-    console.log("New Address:", data);
+    // console.log("New Address:", data);
     setIsSubmitting(false);
     router.push("/account/addresses");
   };
