@@ -1,0 +1,64 @@
+{
+  "common": {
+    "appName": "Beauty Journey",
+    "currency": "EGP",
+    "search": "Search",
+    "wishlist": "Wishlist",
+    "cart": "Cart",
+    "account": "My Account",
+    "login": "Login",
+    "register": "Create Account",
+    "logout": "Logout",
+    "home": "Home",
+    "categories": "Categories",
+    "products": "Products",
+    "about": "About Us",
+    "contact": "Contact Us",
+    "faq": "FAQ",
+    "shippingPolicy": "Shipping Policy",
+    "returnPolicy": "Return Policy",
+    "privacyPolicy": "Privacy Policy",
+    "termsConditions": "Terms & Conditions"
+  },
+  "nav": {
+    "home": "Home",
+    "shop": "Shop",
+    "skincare": "Skincare",
+    "haircare": "Haircare",
+    "bestSellers": "Best Sellers",
+    "newArrivals": "New Arrivals",
+    "blog": "Blog",
+    "quiz": "Beauty Quiz"
+  },
+  "actions": {
+    "addToCart": "Add to Cart",
+    "addToWishlist": "Add to Wishlist",
+    "removeFromWishlist": "Remove from Wishlist",
+    "checkout": "Checkout",
+    "continueShopping": "Continue Shopping",
+    "viewDetails": "View Details",
+    "subscribe": "Subscribe",
+    "discover": "Discover",
+    "startJourney": "Start Your Beauty Journey"
+  },
+  "cart": {
+    "empty": "Your cart is empty",
+    "emptyDescription": "Discover our products and add them to your cart",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "total": "Total",
+    "checkout": "Checkout"
+  },
+  "auth": {
+    "welcomeBack": "Welcome Back",
+    "createAccount": "Create Your Account",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "fullName": "Full Name",
+    "forgotPassword": "Forgot Password?",
+    "rememberMe": "Remember Me",
+    "or": "or",
+    "loginWith": "Login with"
+  }
+}

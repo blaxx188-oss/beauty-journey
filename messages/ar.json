@@ -1,0 +1,64 @@
+{
+  "common": {
+    "appName": "Beauty Journey",
+    "currency": "ج.م",
+    "search": "بحث",
+    "wishlist": "المفضلة",
+    "cart": "سلة التسوق",
+    "account": "حسابي",
+    "login": "تسجيل الدخول",
+    "register": "إنشاء حساب",
+    "logout": "تسجيل الخروج",
+    "home": "الرئيسية",
+    "categories": "الأقسام",
+    "products": "المنتجات",
+    "about": "من نحن",
+    "contact": "اتصلي بنا",
+    "faq": "الأسئلة الشائعة",
+    "shippingPolicy": "سياسة الشحن",
+    "returnPolicy": "سياسة الإرجاع",
+    "privacyPolicy": "سياسة الخصوصية",
+    "termsConditions": "الشروط والأحكام"
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "shop": "التسوق",
+    "skincare": "العناية بالبشرة",
+    "haircare": "العناية بالشعر",
+    "bestSellers": "الأكثر مبيعًا",
+    "newArrivals": "وصل حديثًا",
+    "blog": "المجلة",
+    "quiz": "اختبار البشرة"
+  },
+  "actions": {
+    "addToCart": "إضافة إلى السلة",
+    "addToWishlist": "إضافة إلى المفضلة",
+    "removeFromWishlist": "إزالة من المفضلة",
+    "checkout": "إتمام الشراء",
+    "continueShopping": "متابعة التسوق",
+    "viewDetails": "عرض التفاصيل",
+    "subscribe": "اشتراك",
+    "discover": "اكتشفي",
+    "startJourney": "ابدئي رحلتك الجمالية"
+  },
+  "cart": {
+    "empty": "سلة التسوق فارغة",
+    "emptyDescription": "اكتشفي منتجاتنا وأضيفيها إلى سلتك",
+    "subtotal": "المجموع الفرعي",
+    "shipping": "الشحن",
+    "total": "المجموع",
+    "checkout": "إتمام الشراء"
+  },
+  "auth": {
+    "welcomeBack": "مرحباً بعودتك",
+    "createAccount": "إنشاء حسابك",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "fullName": "الاسم الكامل",
+    "forgotPassword": "نسيت كلمة المرور؟",
+    "rememberMe": "تذكرني",
+    "or": "أو",
+    "loginWith": "تسجيل الدخول باستخدام"
+  }
+}

@@ -1,0 +1,40 @@
+/*
+ * =============================================
+ * Beauty Journey — Dark Mode Design Tokens
+ * Architecture placeholder for future dark mode.
+ * =============================================
+ */
+
+[data-theme="dark"] {
+  /* Colors — Primary (inverted palette) */
+  --color-midnight-onyx: #f9f9f9;
+  --color-soft-pearl: #1a1a1a;
+  --color-warm-taupe: #2a2a2a;
+  --color-rose-gold: #c48390;
+  --color-rose-gold-hover: #b76e79;
+
+  /* Colors — Semantic */
+  --color-success: #5a9c6e;
+  --color-error: #a84030;
+  --color-warning: #e0b58a;
+  --color-info: #7a9db8;
+
+  /* Surface */
+  --color-background: #1a1a1a;
+  --color-surface: #252525;
+  --color-surface-alt: #303030;
+  --color-border: #333333;
+  --color-divider: #333333;
+  --color-text-primary: #f0f0f0;
+  --color-text-secondary: #b0b0b0;
+  --color-placeholder: #707070;
+  --color-disabled: #505050;
+  --color-overlay: rgba(0, 0, 0, 0.6);
+  --color-glass: rgba(37, 37, 37, 0.8);
+
+  /* Shadows (lighter for dark backgrounds) */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.4);
+  --shadow-float: 0 12px 40px rgba(0, 0, 0, 0.5);
+}
